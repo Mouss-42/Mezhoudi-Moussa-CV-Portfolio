@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de Moussa Mezhoudi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="a-propos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-translate="home">Accueil</a></li>
+                <li><a href="../a-propos/a-propos.html" data-translate="about">À propos</a></li>
+                <li><a href="../index.html#projets" data-translate="projects">Projets</a></li>
+                <li><a href="../index.html#competences" data-translate="skills">Compétences</a></li>
+                <li><a href="../index.html#contact" data-translate="contact">Contact</a></li>
+                <li><a href="../cv/cv.html" data-translate="cv">CV</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="title" class="page-title">À propos de Moussa Mezhoudi</h1>
+        
+        <section class="about-content">
+            <div class="timeline">
+                <div class="timeline-item" id="presentation">
+                    <div class="timeline-content">
+                        <h2 data-translate="presentation">Présentation Générale</h2>
+                        <p id="presentation-text"></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" id="experience">
+                    <div class="timeline-content">
+                        <h2 data-translate="experience">Expériences</h2>
+                        <p id="experience-text"></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" id="goals">
+                    <div class="timeline-content">
+                        <h2 data-translate="goals">Objectifs</h2>
+                        <p id="goals-text"></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" id="passions">
+                    <div class="timeline-content">
+                        <h2 data-translate="passions">Passions</h2>
+                        <p id="passions-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 id="contact-title" data-translate="contact">Contact</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/moussa-mezhoudi/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/votre-profil" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:mezhoudimoussa.pro@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.wantedly.com/id/moussa_mezhoudi" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/wantedlylogo.png" alt="Wantedly" class="wantedly-icon">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mezhoudi Moussa. <span id="footer-text">Tous droits réservés.</span></p>
+    </footer>
+
+    <script src="a-propos.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Projet Vilmar SA - Refonte et Amélioration du Site Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sitevilmar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-translate="home">Accueil</a></li>
+                <li><a href="../a-propos/a-propos.html" data-translate="about">À propos</a></li>
+                <li><a href="../index.html#projets" data-translate="projects">Projets</a></li>
+                <li><a href="../index.html#competences" data-translate="skills">Compétences</a></li>
+                <li><a href="../index.html#contact" data-translate="contact">Contact</a></li>
+                <li><a href="../cv/cv.html" data-translate="cv">CV</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="project-hero">
+            <h1 id="project-title" class="typing-effect">Projet Vilmar SA</h1>
+            <p id="project-subtitle" class="fade-in">Refonte et Amélioration du Site Web</p>
+        </section>
+
+        <section id="company-overview">
+            <h2 data-translate="companyOverview">Présentation de l'Entreprise</h2>
+            <div class="company-card fade-in">
+                <img src="../images/vilmartrois.png" alt="Vilmar Forging Process" class="company-image">
+                <div class="company-content">
+                    <p id="company-description"></p>
+                </div>
+            </div>
+            <div class="company-card fade-in">
+                <div class="company-content">
+                    <p id="cdc-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-overview">
+            <h2 data-translate="projectOverview">Aperçu du Projet</h2>
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <p id="project-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-achievements">
+            <h2 data-translate="achievements">Réalisations</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3 data-translate="websiteRedesign">Refonte du Site</h3>
+                    <p id="redesign-description"></p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <i class="fas fa-headset"></i>
+                    <h3 data-translate="supportSection">Section Support</h3>
+                    <p id="support-description"></p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <i class="fas fa-file-alt"></i>
+                    <h3 data-translate="newForms">Nouveaux Formulaires</h3>
+                    <p id="forms-description"></p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <i class="fas fa-lock"></i>
+                    <h3 data-translate="security">Sécurité Améliorée</h3>
+                    <p id="security-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technical-details">
+            <h2 data-translate="technicalDetails">Détails Techniques</h2>
+            <ul class="tech-list fade-in">
+                <li id="tech-item1"></li>
+                <li id="tech-item2"></li>
+                <li id="tech-item3"></li>
+                <li id="tech-item4"></li>
+            </ul>
+        </section>
+
+        <section id="contact-section">
+            <h2 id="contact-title">Contact</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/moussa-mezhoudi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/votre-profil" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:mezhoudimoussa.pro@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.wantedly.com/id/moussa_mezhoudi" target="_blank">
+                    <img src="../images/wantedlylogo.png" alt="Logo Wantedly" class="wantedly-icon">
+                </a>                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mezhoudi Moussa. <span id="footer-text">Tous droits réservés.</span></p>
+    </footer>
+
+    <script src="sitevilmar.js"></script>
+</body>
+</html>

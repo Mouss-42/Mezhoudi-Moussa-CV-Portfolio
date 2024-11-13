@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Des solutions innovantes pour des défis concrets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="glass-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="home" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos/a-propos.html" data-translate="about" class="nav-link">À propos</a></li>
+                <li><a href="#projets" data-translate="projects" class="nav-link">Projets</a></li>
+                <li><a href="#competences" data-translate="skills" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" data-translate="contact" class="nav-link">Contact</a></li>
+                <li><a href="cv/cv.html" data-translate="cv" class="nav-link">CV</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button class="lang-btn glass-btn" data-lang="fr">FR</button>
+            <button class="lang-btn glass-btn" data-lang="en">EN</button>
+            <button class="lang-btn glass-btn" data-lang="jp">JP</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero-section animate">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="gradient-text typing-effect animate" data-translate="title">Innover et Créer : Mon Voyage Professionnel</h1>
+            </div>
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="a-propos" class="animate" data-aos="fade-up">
+            <h2 class="section-title text-center" data-translate="about">Profil</h2>      
+            <div class="skills-container">
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+                            <h3 class="skill-title" data-translate="motivation">Motivation</h3>
+                            <p data-translate="motivationDesc">Passionné et déterminé à relever de nouveaux défis</p>
+                        </div>
+                        <div class="skill-card-back">
+                            <a href="a-propos/a-propos.html" class="button-link" data-translate="learnMore">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <div class="skill-icon"><i class="fas fa-bullseye"></i></div>
+                            <h3 class="skill-title" data-translate="determination">Détermination</h3>
+                            <p data-translate="determinationDesc">Persévérant face aux obstacles pour atteindre mes objectifs</p>
+                        </div>
+                        <div class="skill-card-back">
+                            <a href="a-propos/a-propos.html" class="button-link" data-translate="learnMore">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h3 class="skill-title" data-translate="creativity">Créativité</h3>
+                            <p data-translate="creativityDesc">Approche innovante pour résoudre des problèmes complexes</p>
+                        </div>
+                        <div class="skill-card-back">
+                            <a href="a-propos/a-propos.html" class="button-link" data-translate="learnMore">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+                            <h3 class="skill-title" data-translate="adaptability">Adaptabilité</h3>
+                            <p data-translate="adaptabilityDesc">Capable de trouver des solutions efficaces avec les ressources disponibles</p>
+                        </div>
+                        <div class="skill-card-back">
+                            <a href="a-propos/a-propos.html" class="button-link" data-translate="learnMore">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <div class="skill-icon"><i class="fas fa-users"></i></div>
+                            <h3 class="skill-title" data-translate="teamwork">Travail d'équipe</h3>
+                            <p data-translate="teamworkDesc">Collaborateur efficace et communicatif dans des équipes diverses</p>
+                        </div>
+                        <div class="skill-card-back">
+                            <a href="a-propos/a-propos.html" class="button-link" data-translate="learnMore">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="animate" data-aos="fade-up">
+            <h2 class="section-title text-center" data-translate="projects">Projets</h2>
+            <div class="project-container">
+                <div class="project-card glass-card" id="vilmar" data-aos="fade-up">
+                    <div class="project-link" onclick="location.href='vilmar/sitevilmar.html';">
+                        <div class="project-header">
+                            <h3 class="project-title" data-translate="vilmarTitle">Site de Vilmar SA</h3>
+                            <span class="project-tag">Web Development</span>
+                        </div>
+                        <div class="project-slider multiple-images">
+                            <img class="project-image" src="images/vilmar.png" alt="Site Vilmar SA avant">
+                            <img class="project-image" src="images/vilmardeux.png" alt="Site Vilmar SA après">
+                        </div>
+                        <p class="project-description" data-translate="vilmarDesc">Refonte complète du site, correction des failles, intégration d'une base de données SQL et création de formulaires de support.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" id="minecraft" data-aos="fade-up">
+                    <div class="project-link" onclick="location.href='minecraft/minecraftmode.html';">
+                        <div class="project-header">
+                            <h3 class="project-title" data-translate="minecraftTitle">Mode de jeu Minecraft</h3>
+                            <span class="project-tag">Game Development</span>
+                        </div>
+                        <div class="project-slider multiple-images">
+                            <img class="project-image" src="images/minecraft.png" alt="Plugin Minecraft">
+                            <img class="project-image" src="images/minecraft2.jpg" alt="Minecraft jeu ex">
+                        </div>
+                        <p class="project-description" data-translate="minecraftDesc">Développement d'un plugin Java pour un mode de jeu battle royale, rendant l'expérience plus dynamique.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spigot API</span>
+                            <span class="tech-tag">Maven</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" id="discord" data-aos="fade-up">
+                    <div class="project-link" onclick="location.href='botdiscord/botdiscord.html';">
+                        <div class="project-header">
+                            <h3 class="project-title" data-translate="discordTitle">Bot Discord</h3>
+                            <span class="project-tag">Bot Development</span>
+                        </div>
+                        <div class="project-slider single-image">
+                            <img class="project-image active" src="images/discord-bot.jpg" alt="Bot Discord">
+                        </div>
+                        <p class="project-description" data-translate="discordDesc">Création d'un bot utilisant des API pour apporter des images et rechercher des informations, ajoutant une touche aléatoire aux sessions de jeu.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Discord.py</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" id="grocery" data-aos="fade-up">
+                    <div class="project-link" onclick="location.href='sitealgerie/sitealgerie.html';">
+                        <div class="project-header">
+                            <h3 class="project-title" data-translate="groceryTitle">Sites Web pour des épiceries en Algérie</h3>
+                            <span class="project-tag">Web Development</span>
+                        </div>
+                        <div class="project-slider single-image">
+                            <img class="project-image active" src="images/sitealgerie.jpg" alt="Site épicerie Algérie">
+                        </div>
+                        <p class="project-description" data-translate="groceryDesc">Conception de sites web simples à naviguer et esthétiquement agréables pour des clients algériens.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card coming-soon" data-aos="fade-up">
+                    <div class="project-header">
+                        <h3 class="project-title" data-translate="comingSoon">Bientôt disponible</h3>
+                        <span class="project-tag" data-translate="futureProject">Projet Futur</span>
+                    </div>
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-animation">
+                            <i class="fas fa-code"></i>
+                            <div class="pulse"></div>
+                        </div>
+                        <p class="project-description" data-translate="comingSoonDesc">Un nouveau projet passionnant est en cours de développement. Restez à l'écoute !</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag" data-translate="innovation">Innovation</span>
+                            <span class="tech-tag" data-translate="creativity">Créativité</span>
+                            <span class="tech-tag" data-translate="passion">Passion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card coming-soon" data-aos="fade-up">
+                    <div class="project-header">
+                        <h3 class="project-title" data-translate="comingSoon">Bientôt disponible</h3>
+                        <span class="project-tag" data-translate="futureProject">Projet Futur</span>
+                    </div>
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-animation">
+                            <i class="fas fa-rocket"></i>
+                            <div class="pulse"></div>
+                        </div>
+                        <p class="project-description" data-translate="comingSoonDesc2">Une nouvelle aventure technologique se prépare. Bientôt disponible !</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag" data-translate="innovation">Innovation</span>
+                            <span class="tech-tag" data-translate="technology">Technologie</span>
+                            <span class="tech-tag" data-translate="future">Futur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="animate" data-aos="fade-up">
+            <h2 class="section-title text-center" data-translate="skills">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="html">HTML</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="css">CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="javascript">JavaScript</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="sql">SQL</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="python">Python</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="php">PHP</span>
+                        <span class="skill-percentage">50%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="english">Anglais</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-wrapper skill-card-animated" data-aos="fade-right">
+                    <div class="skill-info">
+                        <span class="skill-name" data-translate="french">Français</span>
+                        <span class="skill-percentage">100%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="animate" data-aos="fade-up">
+            <h2 class="section-title text-center" data-translate="contact">Contact</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/moussa-mezhoudi/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/votre-profil" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:mezhoudimoussa.pro@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.wantedly.com/id/moussa_mezhoudi" target="_blank" class="social-link">
+                    <img src="images/wantedlylogo.png" alt="Logo Wantedly" class="wantedly-icon">
+                </a>                
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p class="copyright-text" data-translate="copyright">&copy; 2024 Mezhoudi Moussa. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

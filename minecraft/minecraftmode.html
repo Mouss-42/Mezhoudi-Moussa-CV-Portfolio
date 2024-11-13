@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Mon Portfolio - Minecraft Battle Royale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="minecraftmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-translate="home">Accueil</a></li>
+                <li><a href="../a-propos/a-propos.html" data-translate="about">À propos</a></li>
+                <li><a href="../index.html#projets" data-translate="projects">Projets</a></li>
+                <li><a href="../index.html#competences" data-translate="skills">Compétences</a></li>
+                <li><a href="../index.html#contact" data-translate="contact">Contact</a></li>
+                <li><a href="../cv/cv.html" data-translate="cv">CV</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="minecraft-project" class="project-section">
+            <div class="project-hero">
+                <h1 class="minecraft-title" data-translate="projectTitle">Battle Royale Minecraft</h1>
+                <p class="project-subtitle" data-translate="projectSubtitle">Un plugin innovant pour une expérience de jeu unique</p>
+                <p class="project-description" data-translate="projectDescription">
+                    Un mode de jeu Battle Royale aérien avec des éléments aléatoires et une stratégie d'adaptation
+                </p>
+            </div>
+
+            <div class="project-overview">
+                <div class="overview-card">
+                    <i class="fas fa-users"></i>
+                    <h3 data-translate="playersTitle">2-16 Joueurs</h3>
+                    <p data-translate="playersDesc">Affrontez vos amis dans des batailles épiques</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-clock"></i>
+                    <h3 data-translate="timeTitle">10 Secondes</h3>
+                    <p data-translate="timeDesc">Entre chaque item aléatoire</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-gift"></i>
+                    <h3 data-translate="rewardTitle">Récompenses</h3>
+                    <p data-translate="rewardDesc">Items spéciaux pour les éliminations</p>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="gameplay" data-translate="gameplayTab">Gameplay</button>
+                    <button class="tab-btn" data-tab="features" data-translate="featuresTab">Fonctionnalités</button>
+                    <button class="tab-btn" data-tab="technical" data-translate="technicalTab">Technique</button>
+                </div>
+
+                <div class="tab-content active" id="gameplay">
+                    <div class="gameplay-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3 data-translate="step1Title">Démarrage</h3>
+                            <p data-translate="step1Desc">Utilisez /start pour lancer une partie. Les joueurs apparaissent sur des blocs de bedrock en cercle.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3 data-translate="step2Title">Items Aléatoires</h3>
+                            <p data-translate="step2Desc">Recevez des items aléatoires toutes les 10 secondes pour construire ou combattre.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3 data-translate="step3Title">Combat</h3>
+                            <p data-translate="step3Desc">Éliminez vos adversaires pour obtenir des items spéciaux et devenir le dernier survivant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="features">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-random"></i>
+                            <h3 data-translate="feature1Title">Items Aléatoires</h3>
+                            <p data-translate="feature1Desc">Distribution équitable d'items toutes les 10 secondes</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-eye"></i>
+                            <h3 data-translate="feature2Title">Mode Spectateur</h3>
+                            <p data-translate="feature2Desc">Observez la partie après votre élimination</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-sync"></i>
+                            <h3 data-translate="feature3Title">Parties Automatiques</h3>
+                            <p data-translate="feature3Desc">Nouvelle partie toutes les 30 secondes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="technical">
+                    <div class="tech-stack">
+                        <h3 data-translate="techStackTitle">Technologies Utilisées</h3>
+                        <div class="tech-grid">
+                            <div class="tech-card">
+                                <i class="fab fa-java"></i>
+                                <h4>Java</h4>
+                            </div>
+                            <div class="tech-card">
+                                <i class="fas fa-plug"></i>
+                                <h4>Spigot API</h4>
+                            </div>
+                            <div class="tech-card">
+                                <i class="fas fa-code"></i>
+                                <h4>Bukkit Events</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-showcase">
+                <h2 data-translate="codeShowcase">Aperçu du Code</h2>
+                <div class="code-tabs">
+                    <button class="code-tab-btn active" data-code="main">Main.java</button>
+                    <button class="code-tab-btn" data-code="game">Game.java</button>
+                    <button class="code-tab-btn" data-code="items">ItemManager.java</button>
+                </div>
+                <div class="code-container">
+                    <div class="code-content active" id="main">
+                        <pre><code class="language-java">
+public class BattleRoyalePlugin extends JavaPlugin {
+    @Override
+    public void onEnable() {
+        getLogger().info("Battle Royale plugin has been enabled!");
+        getCommand("start").setExecutor(new StartCommand(this));
+        getServer().getPluginManager().registerEvents(new GameListener(this), this);
+    }
+
+    @Override
+    public void onDisable() {
+        getLogger().info("Battle Royale plugin has been disabled!");
+    }
+}
+                        </code></pre>
+                    </div>
+                    <div class="code-content" id="game">
+                        <pre><code class="language-java">
+public class Game {
+    private final Set<Player> players;
+    private final BukkitRunnable gameLoop;
+
+    public Game(Set<Player> players) {
+        this.players = players;
+        this.gameLoop = new BukkitRunnable() {
+            @Override
+            public void run() {
+                if (players.size() <= 1) {
+                    endGame();
+                    cancel();
+                } else {
+                    giveRandomItems();
+                }
+            }
+        };
+    }
+
+    public void start() {
+        teleportPlayers();
+        gameLoop.runTaskTimer(BattleRoyalePlugin.getPlugin(BattleRoyalePlugin.class), 0L, 200L);
+    }
+
+    private void giveRandomItems() {
+        for (Player player : players) {
+            ItemManager.giveRandomItem(player);
+        }
+    }
+
+    private void endGame() {
+        // Announce winner and clean up
+    }
+}
+                        </code></pre>
+                    </div>
+                    <div class="code-content" id="items">
+                        <pre><code class="language-java">
+public class ItemManager {
+    private static final List<ItemStack> ITEMS = Arrays.asList(
+        new ItemStack(Material.DIAMOND_SWORD),
+        new ItemStack(Material.BOW),
+        new ItemStack(Material.ARROW, 64),
+        new ItemStack(Material.GOLDEN_APPLE, 3)
+    );
+
+    public static void giveRandomItem(Player player) {
+        ItemStack item = ITEMS.get(new Random().nextInt(ITEMS.size()));
+        player.getInventory().addItem(item);
+        player.sendMessage("You received a " + item.getType().name() + "!");
+    }
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implementation-details">
+                <h2 data-translate="implementationTitle">Détails d'Implémentation</h2>
+                <div class="implementation-grid">
+                    <div class="implementation-card">
+                        <h3 data-translate="architectureTitle">Architecture</h3>
+                        <ul>
+                            <li data-translate="architecture1">Système de gestion d'événements pour le suivi des joueurs</li>
+                            <li data-translate="architecture2">Distribution périodique d'items via TaskScheduler</li>
+                            <li data-translate="architecture3">Gestion des états de jeu avec machine à états</li>
+                        </ul>
+                    </div>
+                    <div class="implementation-card">
+                        <h3 data-translate="challengesTitle">Défis Techniques</h3>
+                        <ul>
+                            <li data-translate="challenge1">Synchronisation des événements de jeu</li>
+                            <li data-translate="challenge2">Équilibrage des items aléatoires</li>
+                            <li data-translate="challenge3">Gestion de la génération de l'arène</li>
+                        </ul>
+                    </div>
+                    <div class="implementation-card">
+                        <h3 data-translate="performanceTitle">Performance</h3>
+                        <ul>
+                            <li data-translate="performance1">Optimisation des calculs de collision</li>
+                            <li data-translate="performance2">Mise en cache des données de jeu</li>
+                            <li data-translate="performance3">Gestion efficace des ressources serveur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-container">
+                <h2 id="contact-title" class="section-title" data-translate="contactTitle">Contact</h2>
+                <p class="contact-description" data-translate="contactDesc">Intéressé par mon travail ? N'hésitez pas à me contacter !</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:mezhoudimoussa.pro@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/moussa-mezhoudi/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    
+                    <a href="https://github.com/votre-profil" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    
+                    <a href="https://www.wantedly.com/id/moussa_mezhoudi" target="_blank" class="contact-link">
+                        <img src="../images/wantedlylogo.png" alt="Logo Wantedly" class="wantedly-logo">
+                        <span>Wantedly</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mezhoudi Moussa. <span id="footer-text" data-translate="rightsReserved">Tous droits réservés.</span></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
+    <script src="minecraftmode.js"></script>
+</body>
+</html>

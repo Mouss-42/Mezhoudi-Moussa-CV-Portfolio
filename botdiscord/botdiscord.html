@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Mon Portfolio - Bot Discord LoL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="botdiscord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-translate="home">Accueil</a></li>
+                <li><a href="../a-propos/a-propos.html" data-translate="about">À propos</a></li>
+                <li><a href="../index.html#projets" data-translate="projects">Projets</a></li>
+                <li><a href="../index.html#competences" data-translate="skills">Compétences</a></li>
+                <li><a href="../index.html#contact" data-translate="contact">Contact</a></li>
+                <li><a href="../cv/cv.html" data-translate="cv">CV</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="jp">JP</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="discord-project" class="project-section">
+            <div class="project-hero">
+                <h1 class="discord-title" data-translate="projectTitle">Bot Discord LoL</h1>
+                <p class="project-subtitle" data-translate="projectSubtitle">Un bot interactif pour des parties League of Legends uniques</p>
+                <p class="project-description" data-translate="projectDescription">
+                    Créez des identités de jeu aléatoires et ajoutez une touche de fun à vos parties avec ce bot Discord en JavaScript
+                </p>
+                <div class="hero-buttons">
+                    <button class="hero-btn primary" id="demoButton" data-translate="demoBtn">
+                        <i class="fab fa-discord"></i> Voir la Démo
+                    </button>
+                    <a href="https://github.com/Mouss-42/project-discord-bot" class="hero-btn secondary" data-translate="githubBtn">
+                        <i class="fab fa-github"></i> Code Source
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-overview">
+                <div class="overview-card">
+                    <i class="fas fa-random"></i>
+                    <h3 data-translate="feature1Title">Personnages Aléatoires</h3>
+                    <p data-translate="feature1Desc">Attribution aléatoire de champions et de rôles</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-images"></i>
+                    <h3 data-translate="feature2Title">Intégration API</h3>
+                    <p data-translate="feature2Desc">Images et informations des champions en temps réel</p>
+                </div>
+                <div class="overview-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3 data-translate="feature3Title">Commandes Simples</h3>
+                    <p data-translate="feature3Desc">Interface intuitive avec des commandes faciles</p>
+                </div>
+            </div>
+
+            <div class="project-details">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="commands" data-translate="commandsTab">Commandes</button>
+                    <button class="tab-btn" data-tab="features" data-translate="featuresTab">Fonctionnalités</button>
+                    <button class="tab-btn" data-tab="technical" data-translate="technicalTab">Technique</button>
+                </div>
+
+                <div class="tab-content active" id="commands">
+                    <div class="commands-list">
+                        <div class="command-item">
+                            <div class="command-header">
+                                <i class="fas fa-terminal"></i>
+                                <code>/random-identity</code>
+                            </div>
+                            <p data-translate="command1Desc">Génère une identité aléatoire avec champion et rôle</p>
+                        </div>
+                        <div class="command-item">
+                            <div class="command-header">
+                                <i class="fas fa-terminal"></i>
+                                <code>/champion-info</code>
+                            </div>
+                            <p data-translate="command2Desc">Affiche les informations d'un champion spécifique</p>
+                        </div>
+                        <div class="command-item">
+                            <div class="command-header">
+                                <i class="fas fa-terminal"></i>
+                                <code>/help</code>
+                            </div>
+                            <p data-translate="command3Desc">Liste toutes les commandes disponibles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="features">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-dice"></i>
+                            <h3 data-translate="detailFeature1Title">Génération Aléatoire</h3>
+                            <p data-translate="detailFeature1Desc">Système sophistiqué de sélection aléatoire équilibrée</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-sync"></i>
+                            <h3 data-translate="detailFeature2Title">Mise à Jour Auto</h3>
+                            <p data-translate="detailFeature2Desc">Synchronisation automatique avec les derniers champions</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users"></i>
+                            <h3 data-translate="detailFeature3Title">Multi-Serveur</h3>
+                            <p data-translate="detailFeature3Desc">Fonctionne sur plusieurs serveurs Discord simultanément</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="technical">
+                    <div class="tech-stack">
+                        <h3 data-translate="techStackTitle">Technologies Utilisées</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-discord"></i>
+                                <span>Discord.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-showcase">
+                <h2 data-translate="codeShowcase">Aperçu du Code</h2>
+                <div class="code-tabs">
+                    <button class="code-tab-btn active" data-code="main">index.js</button>
+                    <button class="code-tab-btn" data-code="commands">commands.js</button>
+                    <button class="code-tab-btn" data-code="api">api.js</button>
+                </div>
+                <div class="code-container">
+                    <div class="code-content active" id="main">
+                        <pre><code class="language-javascript">
+const { Client, GatewayIntentBits } = require('discord.js');
+const { token } = require('./config.json');
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages
+    ]
+});
+
+client.once('ready', () => {
+    console.log('Bot is ready!');
+});
+
+client.on('interactionCreate', async interaction => {
+    if (!interaction.isCommand()) return;
+
+    const { commandName } = interaction;
+
+    if (commandName === 'random-identity') {
+        const champion = getRandomChampion();
+        const role = getRandomRole();
+        
+        await interaction.reply({
+            content: `Votre identité: ${champion} - ${role}`,
+            ephemeral: true
+        });
+    }
+});
+
+client.login(token);
+                        </code></pre>
+                    </div>
+                    <div class="code-content" id="commands">
+                        <pre><code class="language-javascript">
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { getRandomChampion, getRandomRole, getChampionInfo } = require('./utils');
+
+module.exports = {
+    randomIdentity: new SlashCommandBuilder()
+        .setName('random-identity')
+        .setDescription('Génère une identité LoL aléatoire')
+        .toJSON(),
+
+    championInfo: new SlashCommandBuilder()
+        .setName('champion-info')
+        .setDescription('Affiche les informations d\'un champion spécifique')
+        .addStringOption(option =>
+            option.setName('champion')
+                .setDescription('Le nom du champion')
+                .setRequired(true))
+        .toJSON(),
+
+    help: new SlashCommandBuilder()
+        .setName('help')
+        .setDescription('Liste toutes les commandes disponibles')
+        .toJSON(),
+
+    async executeRandomIdentity(interaction) {
+        const champion = await getRandomChampion();
+        const role = getRandomRole();
+        await interaction.reply(`Votre identité LoL : ${champion} - ${role}`);
+    },
+
+    async executeChampionInfo(interaction) {
+        const championName = interaction.options.getString('champion');
+        const championInfo = await getChampionInfo(championName);
+        if (championInfo) {
+            await interaction.reply({ embeds: [championInfo] });
+        } else {
+            await interaction.reply('Champion non trouvé. Vérifiez l\'orthographe et réessayez.');
+        }
+    },
+
+    async executeHelp(interaction) {
+        const commands = [
+            '`/random-identity` : Génère une identité LoL aléatoire',
+            '`/champion-info [nom du champion]` : Affiche les informations d\'un champion spécifique',
+            '`/help` : Affiche cette liste de commandes'
+        ];
+        await interaction.reply(`Commandes disponibles :\n${commands.join('\n')}`);
+    }
+};
+                        </code></pre>
+                    </div>
+                    <div class="code-content" id="api">
+                        <pre><code class="language-javascript">
+async function getChampionData() {
+    const response = await fetch(
+        'http://ddragon.leagueoflegends.com/cdn/13.1.1/data/fr_FR/champion.json'
+    );
+    const data = await response.json();
+    return Object.values(data.data);
+}
+
+async function getRandomChampion() {
+    const champions = await getChampionData();
+    const randomIndex = Math.floor(Math.random() * champions.length);
+    return champions[randomIndex].name;
+}
+
+function getRandomRole() {
+    const roles = ['Top', 'Jungle', 'Mid', 'ADC', 'Support'];
+    return roles[Math.floor(Math.random() * roles.length)];
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implementation-details">
+                <h2 data-translate="implementationTitle">Détails d'Implémentation</h2>
+                <div class="implementation-grid">
+                    <div class="implementation-card">
+                        <h3 data-translate="architectureTitle">Architecture</h3>
+                        <ul>
+                            <li data-translate="architecture1">Structure modulaire avec gestionnaire de commandes</li>
+                            <li data-translate="architecture2">Intégration API LoL pour données temps réel</li>
+                            <li data-translate="architecture3">Système de cache pour optimisation</li>
+                        </ul>
+                    </div>
+                    <div class="implementation-card">
+                        <h3 data-translate="challengesTitle">Défis Techniques</h3>
+                        <ul>
+                            <li data-translate="challenge1">Gestion des limites de l'API Discord</li>
+                            <li data-translate="challenge2">Synchronisation des données LoL</li>
+                            <li data-translate="challenge3">Optimisation des performances</li>
+                        </ul>
+                    </div>
+                    <div class="implementation-card">
+                        <h3 data-translate="performanceTitle">Performance</h3>
+                        <ul>
+                            <li data-translate="performance1">Temps de réponse < 1 seconde</li>
+                            <li data-translate="performance2">Cache intelligent des données</li>
+                            <li data-translate="performance3">Gestion efficace de la mémoire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-container">
+                <h2 id="contact-title" class="section-title" data-translate="contactTitle">Contact</h2>
+                <p class="contact-description" data-translate="contactDesc">Intéressé par mon travail ? N'hésitez pas à me contacter !</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:mezhoudimoussa.pro@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/moussa-mezhoudi/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    
+                    <a href="https://github.com/votre-profil" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    
+                    <a href="https://www.wantedly.com/id/moussa_mezhoudi" target="_blank" class="contact-link">
+                        <img src="../images/wantedlylogo.png" alt="Logo Wantedly" class="wantedly-logo">
+                        <span>Wantedly</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mezhoudi Moussa. <span id="footer-text" data-translate="rightsReserved">Tous droits réservés.</span></p>
+    </footer>
+
+    <!-- Modal de démo -->
+    <div class="demo-modal" id="demoModal">
+        <div  class="demo-content">
+            <button class="close-modal">×</button>
+            <div class="demo-interface">
+                <div class="demo-header">
+                    <img src="./Champions/logo-lol.png" alt="LoL Logo" class="lol-logo">
+                    <h2 data-translate="demoTitle">Générateur d'Identité LoL</h2>
+                </div>
+                <div class="demo-result">
+                    <div class="role-section">
+                        <h3 data-translate="yourRole">Votre rôle est  :</h3>
+                        <div class="role-display">
+                            <span class="role-text">...</span>
+                            <img src="" alt="" class="role-icon" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="champion-section">
+                        <h3 data-translate="yourChampion">Votre champion est :</h3>
+                        <div class="champion-display">
+                            <span class="champion-text">...</span>
+                            <div class="champion-image-container">
+                                <img src="" alt="" class="champion-image" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="generate-btn" data-translate="generateBtn">
+                    <i class="fas fa-dice"></i>
+                    Générer une identité
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="botdiscord.js"></script>
+</body>
+</html>
